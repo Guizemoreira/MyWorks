@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+   background-image: linear-gradient(#313131, #212021, #313131);
+   color: #a800ff;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #212021;
+}
+
+.logo {
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.4rem;
+    margin-left: 16px;
+    color: #a800ff;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+    gap: 9px;
+    margin-right: 20px;
+    color: #a800ff;   
+}
+
+main{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    justify-items: center;
+    margin: 0 auto;
+    padding: 65px;
+
+}
+
+aside{
+    display: flex;
+    flex-direction: row;
+    max-width: 600px;
+}
+img{
+    width: 650px;
+    height: 650px;
+}
+
+.window{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    max-width: 600px;
+}
+
+h3{
+    text-transform: uppercase;
+    font-family: 'Poppins',sans-serif;
+    line-height: 25px;
+}
+
+p{
+    margin-top: 1rem;
+}
+.pin{
+    margin: 17px;
+    display: inline-flex;
+    flex-direction: row;
+    gap: 2.5rem;
+}
+
+.btn{
+    padding: 0.6rem;
+    border: solid 2px #a800ff;
+    border-radius: 1rem;
+    color: #a800ff;
+    background-color: #272727;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: #a800ff;
+    color: white;
+    transition: 1s;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-size: 2rem;
+    padding-right: 1.5rem;
+    padding-top: 2rem;
+}
+
+.cpright{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+
+.navbar ul a{
+    text-decoration: none;
+    color: #a800ff;
+    transform: 2ms ease-in;
+    position: relative;
+}
+
+.navbar ul a::before {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 0px;
+    height: 1.5px;
+    background-color: #a800ff;
+    transition: all 1.5s ease;
+}
+
+.navbar ul a:hover:before {
+    width: 100%;
+}
